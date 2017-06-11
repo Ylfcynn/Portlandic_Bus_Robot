@@ -1,6 +1,9 @@
 #container {
-  display: flex;
-  justify-content: center;
+
+}
+
+#aniGIF {
+  width: auto;
 }
 
 h1 {

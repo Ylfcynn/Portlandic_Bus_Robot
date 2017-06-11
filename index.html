@@ -4,23 +4,68 @@
   <head>
     <meta charset="utf-8">
       <title>Portlandic Bus Robot</title>
-      <link rel="stylesheet" href="static/css/Portlandic_Bus_Robot.css">
+
+      <link rel="icon" type="image/png" href="favicon.ico"/>
+
+      <!-- jQuery UI CSS -->
+      <link type ="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+      <!-- Custom CSS -->
+      <link type ="text/css" rel="stylesheet" href="static/css/Portlandic_Bus_Robot.css">
+
   </head>
 
   <body>
+    <main id="container-fluid">
+      <h1 align="center">ネコバスはどこ？<br>
+          Where is Neko Bus?</h1>
+      <section align="center" id="aniGIF">
+        <img src="static/img/catbus.gif" alt="The catbus cometh!" text="See the kitty run!">
+      </section>
 
-    <h1>Bus stops within 100 meters of your current location</h1>
-    <div id="map"></div>
+      <div id="map"></div>
+      <item id="slider">
+      </item>
 
-    <main>
+      <article>
+
+        <table class="table table-inverse">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Stop Name</th>
+              <th>Arrival Time</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody id="busses">
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </article>
 
     </main>
-
   </body>
 
+
+  <!-- jQuery vendor -->
   <script type="text/javascript" src="static/vendor/jquery-3.2.1.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- jQuery UI CDN -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
   <script type="text/javascript" src="static/js/Portlandic_Bus_Robot.js"></script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpskoGZkQSOWm7wjiA6w8ZjB39fVL6bzo&callback=initMap">
-  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpskoGZkQSOWm7wjiA6w8ZjB39fVL6bzo&callback=initMap"></script>
+
 </html>
